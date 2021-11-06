@@ -1,0 +1,156 @@
+:root {
+    --default: #e0e0e0;
+    --defaultBg: #aeaeae;
+    --blue: #3d5afe;
+    --primary: #3d5afe;
+    --secondary: #455A64;
+    --blueBg: rgba(41, 98, 255, 0.1);
+    --white: #fff;
+    --black: #222;
+}
+
+hr {
+    margin: 25px 0 25px;
+    opacity: .3;
+}
+
+button {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    background: var(--default);
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover,
+.btn:focus {
+    background: var(--defaultBg);
+    box-shadow: 2px 2px 5px var(--defaultBg);
+}
+
+.outline {
+    background: transparent;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+
+.outline:hover,
+.outline:focus {
+    background: var(--blueBg);
+}
+
+.text {
+    border: none;
+    background: none;
+    color: #3d5afe;
+}
+
+.text:hover,
+.text:focus {
+    background: var(--blueBg);
+}
+
+.disableShadow {
+    background: var(--blue);
+    color: white;
+}
+
+.disableShadow:hover,
+.disableShadow:focus {
+    box-shadow: none;
+    /* background: var(--blue);
+    color: var(--black); */
+    background: #0039CB;
+    box-shadow: none;
+}
+
+.disabled {
+    cursor: not-allowed;
+    background: rgb(229, 229, 229) !important;
+    pointer-events: none;
+    color: rgba(41, 37, 37, 0.5);
+    opacity: 0.7;
+}
+
+.text.disabled {
+    background: none !important;
+    color: rgba(41, 37, 37, 0.5)
+}
+
+button .material-icons {
+    margin: 0 10px;
+}
+
+.sm,
+.md,
+.lg,
+.icons {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.sm:hover,
+.md:hover,
+.lg:hover,
+.icons:hover {
+    background: #0039CB;
+    box-shadow: none;
+}
+
+button.sm {
+    padding: 10px 15px;
+}
+
+button.md {
+    padding: 15px 30px;
+}
+
+button.lg {
+    padding: 18px 35px;
+}
+
+button.default {
+    color: #000;
+}
+
+button.primary {
+    background: var(--blue);
+}
+
+button.secondary {
+    background: var(--secondary);
+}
+
+button.danger {
+    background: #D32F2F;
+}
+
+button.default:hover {
+    background: #aeaeae;
+    box-shadow: none;
+}
+
+button.primary:hover {
+    background: #0039CB;
+    box-shadow: none;
+}
+
+button.secondary:hover {
+    background: #1C313A;
+    box-shadow: none;
+}
+
+button.danger:hover {
+    background: #9A0007;
+    box-shadow: none;
+}
